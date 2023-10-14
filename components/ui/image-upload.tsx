@@ -53,7 +53,8 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
           </div>
         ))}
       </div>
-      <CldUploadWidget onUpload={onUpload} uploadPreset="t4drjppf">
+      {/* Get upload preset from console.cloudinary.com upload section, dont forget to enable upload preset */}
+      <CldUploadWidget onUpload={onUpload} uploadPreset="zyolafbc">
         {({ open }) => {
           const onClick = () => {
             open();
